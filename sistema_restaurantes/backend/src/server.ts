@@ -12,6 +12,9 @@ import 'express-async-errors'
 
 import cors from 'cors'
 
+//import para ter novo middlaware pra criar rotas estáticas para acessar os arquivos
+import path from 'path'
+
 //import das rotas
 import {router} from './routes'
 
@@ -23,6 +26,10 @@ app.use(express.json())
 app.use(cors())
 app.use(router);
 
+app.use(
+    '/files',
+    express.static(path.resolve(__dirname, '..', 'temp'))
+)
 
 //tratamento de erro 
 app.use((erro: Error, req: Request, res: Response, next:NextFunction)=>{
