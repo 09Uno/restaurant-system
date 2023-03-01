@@ -1,10 +1,11 @@
 # sistema_restaurantes
-Um sistema para gerenciar pedidos e mesas de restaurantes
+A system to manage restaurant orders and tables that uses the local REST API to perform the necessary CRUD operations (backend code finalized, frontend code requires some implementations).
 
-1 - faça a instalação do gerenciador de pacotes yarn; </br>
-2 - configure um servidor local postgrees(pgadmin4); </br>
-3 - direcione o servidor criado no arquivo .env que fica localizado na pasta Backend; </br>
-4 - abra o CMD na pasta Backend; </br>
-5 - rode o comando(yarn prisma migrate dev) para fazer a migrate; </br>
-6- após, na pasta backend, abra o cmd e utilize o comando yarn dev para rodar o servidor local; </br>
-7- faça o mesmo na pasta frontend; </br>
+System with login and registration using JWT
+Product registration
+Product listing
+Dashboard with tables and orders
+
+The system was developed using Next.js on the frontend and Node.js on the backend.
+
+<img src="https://github.com/09Uno/imgstoreadme/blob/main/4.png" alt="Login Page"></br>
